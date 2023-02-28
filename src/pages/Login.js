@@ -111,12 +111,13 @@ const loginFn=(e)=>{
         localStorage.setItem('userTypes',response.data.userTypes)
         localStorage.setItem('userStatus',response.data.userStatus)
         localStorage.setItem('token',response.data.accessToken)
-        if(response.data.userType==='CUSTOMER'){
+        if(response.data.userTypes==='CUSTOMER'){
           window.location.href='/customer'
         }
-        else if(response.data.userType==='ENGINEER'){
+        else if(response.data.userTypes==='ENGINEER'){
           window.location.href='/engineer'
         }else {
+
           window.location.href='/admin'
         }
       }

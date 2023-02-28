@@ -6,9 +6,14 @@ import Login from './pages/Login'
 import NotFound from './pages/NotFound'
 import Unauthorized from './pages/Unauthorized'
 import Admin from './pages/Admin'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.bundle.min'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "bootstrap-icons/font/bootstrap-icons.css";
+import 'react-circular-progressbar/dist/styles.css';
+// import '@coreui/coreui/dist/css/coreui.min.css';
+// import '@coreui/coreui/dist/js/coreui.min.js';
 import './App.css'
+
 export default function App() {
   return (
     <Router>
@@ -66,6 +71,7 @@ export default function App() {
           </Suspense>
         }
         />
+
       </Routes>
     </Router>
   )
