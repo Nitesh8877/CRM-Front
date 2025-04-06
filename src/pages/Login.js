@@ -30,7 +30,7 @@ function Login() {
     e.preventDefault();
     console.log(data)
     console.log(BASE_URL)
-    axios.post(BASE_URL+'crm/api/auth/signup',data)
+    axios.post(BASE_URL+'/crm/api/auth/signup',data)
     .then(response=>{
       if(response.status===201){
         window.location.href="/"
@@ -98,7 +98,7 @@ const loginFn=(e)=>{
     "password":password
   }
   e.preventDefault();
-  axios.post(BASE_URL+'crm/api/auth/signin',data)
+  axios.post(BASE_URL+'/crm/api/auth/signin',data)
   .then(response=>{
     if(response.status===200){
       if(response.data.message){
